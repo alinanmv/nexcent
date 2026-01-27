@@ -321,3 +321,12 @@ input{
   padding: 9px;
   margin-top: 24px;
 }
+.card h3{
+  margin-top: 24px;
+}
+.article .flex-side{
+  align-items: start;
+}
+.article .content-side{
+  margin-left: 50px;
+}
