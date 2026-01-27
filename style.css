@@ -70,7 +70,7 @@ li {
   text-decoration: none;
 }
 nav {
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 header {
   background-color: var(--silver);
@@ -91,6 +91,7 @@ nav a {
 }
 .intro p {
   margin-top: 16px;
+  font-size: 16px;
 }
 .intro button {
   margin-top: 32px;
@@ -102,11 +103,12 @@ h2 {
   line-height: 44px;
 }
 .clients {
-  padding: 40px 0px;
+  padding: 35px 0px;
   text-align: center;
 }
 .clients p {
   margin-top: 8px;
+  font-size: 16px;
 }
 .clients .logos {
   margin-top: 16px;
@@ -114,7 +116,6 @@ h2 {
 }
 .system {
   text-align: center;
-  padding: 40px 0px;
 }
 h3 {
   font-size: 28px;
@@ -128,26 +129,34 @@ h3 {
 .system .cards-container .card {
   display: inline-block;
   vertical-align: top;
-  max-width: calc(100% / 3 - 120px);
+  max-width: calc(100% / 3 - 105px);
   width: 100%;
   background-color: #fff;
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 30px;
   overflow: hidden;
+  margin-right: 80px;
   box-shadow: 0 4px 6px rgba(171, 190, 209, 0.3);
+}
+.system .cards-container .card:nth-child(3n){
+  margin-right: 0px;
 }
 .card p {
   margin-top: 8px;
+      font-size: 14px;
+    line-height: 20px;
 }
 .cards-container {
   margin-top: 16px;
 }
 .unseen-spending {
-  padding: 52px 0px;
+  padding: 75px 0px;
 }
 .unseen-spending p {
   margin-top: 16px;
+      font-size: 14px;
+    line-height: 20px;
 }
 .unseen-spending button {
   margin-top: 32px;
@@ -166,89 +175,90 @@ h3 {
   font-size: 16px;
   color: var(--grey);
 }
-.local-business{
-  padding: 64px 0px;
+.local-business {
+  padding: 30px 0px;
   background-color: var(--silver);
   margin-top: 48px;
 }
-.local-business p{
+.local-business p {
   margin-top: 8px;
-  color:var(--black) ;
+  color: var(--black);
 }
-.design-footer p{
-  font-size:14px ;
+.design-footer p {
+  font-size: 14px;
   margin-top: 16px;
   line-height: 20px;
 }
-.design-footer button{
+.design-footer button {
   margin-top: 32px;
 }
-.design-footer{
-  padding: 48px 0px;
+.design-footer {
+      padding-top: 62px;
+    padding-bottom: 25px;
 }
-.article{
+.article {
   padding: 32px 0px;
   background-color: var(--silver);
   display: flex;
   align-items: self-start;
-  margin-top: 48PX;
+  margin-top: 48px;
 }
-.article p{
-  margin-top:0;
+.article p {
+  margin-top: 0;
   font-size: 16px;
   line-height: 24px;
 }
-.article .content-side{
+.article .content-side {
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
-.article strong{
+.article strong {
   color: var(--primary);
   margin-top: 16px;
   font-size: 20px;
   line-height: 28px;
 }
-.article small{
+.article small {
   color: var(--l-grey);
   font-size: 16px;
   line-height: 24px;
   margin-top: 8px;
 }
-.article .logos{
+.article .logos {
   margin-top: 32px;
 }
-.article a{
+.article a {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
 }
-.marketing-card-container .card{
-   display: inline-block;
+.marketing-card-container .card {
+  display: inline-block;
   vertical-align: top;
   max-width: calc(100% / 3 - 24px);
   width: 100%;
-  position:relative;
+  position: relative;
   border-radius: 8px;
   margin-bottom: 24px;
   margin-right: 24px;
   overflow: hidden;
- height: 366px;
+  height: 366px;
 }
-.marketing-card-container .card:nth-child(3n){
+.marketing-card-container .card:nth-child(3n) {
   margin-right: 0;
 }
-.marketing{
+.marketing {
   text-align: center;
   padding-bottom: 48px;
 }
-.marketing p{
+.marketing p {
   margin-top: 8px;
 }
-.marketing-card-container{
+.marketing-card-container {
   margin-top: 16px;
 }
-.marketing-card-container .card .content-side{
+.marketing-card-container .card .content-side {
   padding: 16px;
   background-color: var(--silver);
   max-width: 317px;
@@ -259,74 +269,93 @@ h3 {
   left: 10px;
   right: 10px;
   box-shadow: 0 4px 12px rgba(171, 190, 209, 0.3);
-
 }
-.marketing-card-container .card .content-side p{
+.marketing-card-container .card .content-side p {
   margin-bottom: 16px;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
 }
-.marketing-card-container .card .content-side a{
+.marketing-card-container .card .content-side a {
   font-weight: 700;
 }
-.demo{
+.demo {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 32px 0px;
+  padding: 40px 0px;
   background-color: var(--silver);
 }
-.demo button{
+.demo button {
   margin-top: 32px;
 }
-footer{
+footer {
   padding: 64px 0px;
   background-color: var(--black);
-  color:var(--silver)
+  color: var(--silver);
 }
-footer .content-side p{
-  color:var(--silver);
+footer .content-side p {
+  color: var(--silver);
   font-size: 14px;
 }
-footer .content-side img{
-  margin-bottom:40px ;
+footer .content-side img {
+  margin-bottom: 40px;
 }
-footer ul{
+footer ul {
   padding-left: 0px;
 }
-.gap3{
+.gap3 {
   display: flex;
   gap: 30px;
   align-items: start;
 }
-footer strong{
+footer strong {
   font-size: 20px;
   line-height: 28px;
 }
-footer ul{
+footer ul {
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  gap:12px ;
+  gap: 12px;
 }
-input{
-  all:unset;
-
+input {
+  all: unset;
 }
-.input-wrapper{
+.input-wrapper {
   background-color: var(--grey);
-  border-radius: 8px ;
+  border-radius: 8px;
   padding: 9px;
   margin-top: 24px;
+  display: flex;
+  align-items: center;
 }
-.card h3{
+.card h3 {
   margin-top: 24px;
 }
-.article .flex-side{
+.article .flex-side {
   align-items: start;
 }
-.article .content-side{
+.article .content-side {
   margin-left: 50px;
+}
+.local-card-list-container .card h3 {
+  margin-top: 0px;
+}
+.local-card-list-container .card .flex-side {
+  gap: 16px;
+}
+.center {
+  align-items: center;
+}
+::placeholder {
+  color: var(--silver);
+  font-size: 14px;
+}
+.content-side .input-wrapper img{
+  margin-bottom: 0px ;
+}
+.local-card-list-container{
+  width: 50%;
 }
