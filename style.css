@@ -27,6 +27,7 @@ h1 {
   margin: 0;
   color: var(--d-grey);
   line-height: 76px;
+  letter-spacing: 1.9px;
 }
 p {
   color: var(--grey);
@@ -40,12 +41,13 @@ p {
 }
 .space {
   justify-content: space-between;
+  align-items: center;
 }
 button {
   padding: 16px 32px;
   background-color: var(--primary);
   border: none;
-  border-radius: 10px;
+  border-radius: 3px;
   color: var(--white);
 }
 .disabled {
@@ -139,13 +141,13 @@ h3 {
   margin-right: 80px;
   box-shadow: 0 4px 6px rgba(171, 190, 209, 0.3);
 }
-.system .cards-container .card:nth-child(3n){
+.system .cards-container .card:nth-child(3n) {
   margin-right: 0px;
 }
 .card p {
   margin-top: 8px;
-      font-size: 14px;
-    line-height: 20px;
+  font-size: 14px;
+  line-height: 20px;
 }
 .cards-container {
   margin-top: 16px;
@@ -153,36 +155,41 @@ h3 {
 .unseen-spending {
   padding: 75px 0px;
 }
+.unseen-spending .content-side {
+  max-width: 658px;
+}
 .unseen-spending p {
   margin-top: 16px;
-      font-size: 14px;
-    line-height: 20px;
+  font-size: 14px;
+  line-height: 20px;
 }
 .unseen-spending button {
   margin-top: 32px;
 }
-.local-card-list-container .card {
-  display: inline-block;
-  vertical-align: top;
-  max-width: calc(100% / 2 - 30px);
-  width: 100%;
-  margin-bottom: 40px;
-  overflow: hidden;
-}
-.local-card-list-container .card .content-side {
+.local-card-list-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: start;
+  width: 47%;
+}
+.local-card-list-container .card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+small {
   font-size: 16px;
-  color: var(--grey);
 }
 .local-business {
-  padding: 30px 0px;
+  padding: 64px 0px;
   background-color: var(--silver);
   margin-top: 48px;
 }
 .local-business p {
   margin-top: 8px;
   color: var(--black);
+  font-size: 16px;
 }
 .design-footer p {
   font-size: 14px;
@@ -193,8 +200,7 @@ h3 {
   margin-top: 32px;
 }
 .design-footer {
-      padding-top: 62px;
-    padding-bottom: 25px;
+  padding-top: 45px;
 }
 .article {
   padding: 32px 0px;
@@ -232,6 +238,7 @@ h3 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
+  margin-top: 10px;
 }
 .marketing-card-container .card {
   display: inline-block;
@@ -251,6 +258,7 @@ h3 {
 .marketing {
   text-align: center;
   padding-bottom: 48px;
+  padding-top: 25px;
 }
 .marketing p {
   margin-top: 8px;
@@ -265,7 +273,7 @@ h3 {
   border-radius: 10px;
   margin: 0 auto;
   position: absolute;
-  bottom: 0px;
+  bottom: 40px;
   left: 10px;
   right: 10px;
   box-shadow: 0 4px 12px rgba(171, 190, 209, 0.3);
@@ -305,10 +313,11 @@ footer .content-side img {
 footer ul {
   padding-left: 0px;
 }
-.gap3 {
+.footer-nav {
   display: flex;
-  gap: 30px;
   align-items: start;
+  width: 57%;
+  justify-content: space-between;
 }
 footer strong {
   font-size: 20px;
@@ -329,7 +338,9 @@ input {
   padding: 9px;
   margin-top: 24px;
   display: flex;
+  min-width: 260px;
   align-items: center;
+  justify-content: space-between;
 }
 .card h3 {
   margin-top: 24px;
@@ -353,9 +364,19 @@ input {
   color: var(--silver);
   font-size: 14px;
 }
-.content-side .input-wrapper img{
-  margin-bottom: 0px ;
+.content-side .input-wrapper img {
+  margin-bottom: 0px;
 }
-.local-card-list-container{
-  width: 50%;
+.buttons button:last-child {
+  padding: 10px 20px;
+}
+.buttons button {
+  font-size: 12px;
+  line-height: 16px;
+}
+.local-business .space {
+  align-items: start;
+}
+.design-footer .flex-side .content-side {
+  margin-left: 50px;
 }
