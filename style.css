@@ -14,7 +14,7 @@
   --success: #2e7d31;
   --shadow: #abbed1;
 }
-*{
+* {
   box-sizing: border-box;
 }
 body {
@@ -150,16 +150,21 @@ h3 {
 .system .cards-container .card {
   display: inline-block;
   vertical-align: top;
-  max-width: calc(100% / 3 - 105px);
+
+  max-width: calc(100% / 3 - clamp(23px, 4.1vw, 105px));
   width: 100%;
+
   background-color: #fff;
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 30px;
+
+  margin-right: clamp(30px, 5.5vw, 80px);
+
   overflow: hidden;
-  margin-right: 80px;
   box-shadow: 0 4px 6px rgba(171, 190, 209, 0.3);
 }
+
 .system .cards-container .card:nth-child(3n) {
   margin-right: 0px;
 }
@@ -408,89 +413,107 @@ input {
 footer .flex-side {
   align-items: start;
 }
-.main-navigation ul{
+.main-navigation ul {
   padding: 0px;
 }
-.main-navigation ul{
-  gap: clamp(
-  25px,
-  calc(25px + (100vw - 1240px) * 0.125),
-  50px
-);}
-@media (min-width: 1024px) and (max-width: 1440px) { 
-.container{
-  width: calc(100% - 144px);
+.main-navigation ul {
+  gap: clamp(25px, calc(25px + (100vw - 1240px) * 0.125), 50px);
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+    width: calc(100% - 144px);
+  }
 }
 
-
+@media (min-width: 840px) and (max-width: 1023px) {
 }
-
-@media (min-width: 840px) and (max-width: 1023px) { 
-    
+@media (min-width: 768px) and (max-width: 839px) {
+  .container {
+    width: calc(100% - 60px);
+    overflow-x: hidden;
+  }
+  header .buttons {
+    display: none;
+  }
+  .intro-img {
+    width: 300px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .intro p {
+    font-size: 14px;
+  }
+  .intro {
+    padding: 45px 0px;
+  }
+  h2 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+  .clients p {
+    font-size: 14px;
+  }
+  .clients .logos {
+    padding: 0px;
+  }
+  .system .cards-container .card {
+    max-width: calc(100% / 3 - 23px);
+    margin-right: 30px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .card h3 {
+    margin-top: 0;
+  }
+  .unseen-spending img {
+    width: 300px;
+  }
+  .unseen-spending p {
+    font-size: 12px;
+  }
+  .unseen-spending {
+    padding: 25px 0px;
+  }
+  .system p {
+    font-size: 14px;
+  }
+  .local-business p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .local-card-list-container .card .flex-side img {
+    width: 35px;
+  }
+  .card small {
+    font-size: 13px;
+  }
+  .local-card-list-container .card h3 {
+    font-size: 16px;
+  }
+  .local-business {
+    padding: 40px 0px;
+  }
+  .pana {
+    width: 229px;
+  }
+  .design-footer p {
+    font-size: 12px;
+  }
+  .marketing p {
+    font-size: 14px;
+  }
+  .marketing {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
 }
-@media (min-width: 768px) and (max-width: 839px) { 
-    .container{
-  width: calc(100% - 60px);
-  overflow-x: hidden;
+@media (min-width: 540px) and (max-width: 767px) {
 }
-header .buttons{
-  display: none;
+@media (min-width: 425px) and (max-width: 539px) {
 }
-.intro-img{
-  width: 300px;
-}
-h1{
-  font-size: 40px;
-  line-height: 1.2;
-}
-.intro p{
-  font-size: 14px;
-}
-.intro{
-  padding: 45px 0px;
-}
-h2{
-  font-size: 27px;
-  line-height: 1.2;
-}
-.clients p{
-  font-size: 14px
-}
-.clients .logos{
-  padding: 0px;
-}
-.system .cards-container .card{
-      max-width
-
-: calc(100% / 3 - 23px);
-margin-right: 30px;
-}
-h3{
-  font-size: 18px;
-  line-height: 1.2;
-}
-.card h3{
-  margin-top: 0;
-}
-.unseen-spending img{
-  width: 300px;
-}
-.unseen-spending p{
-  font-size: 12px;
-}
-.unseen-spending{
-  padding: 25px 0px;
-}
-.system p{
-  font-size: 14px;
-}
-}
-@media (min-width: 540px) and (max-width: 767px) { 
-    
-}
-@media (min-width: 425px) and (max-width: 539px) { 
-    
-}
-@media (min-width: 280px) and (max-width: 423px) { 
-    
+@media (min-width: 280px) and (max-width: 423px) {
 }
